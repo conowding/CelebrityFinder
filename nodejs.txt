@@ -1,0 +1,27 @@
+node js 관리
+nvm을 사용하면 여러 버전의 Node.js를 쉽게 관리할 수 있습니다.
+nvm 설치 nvm이 설치되어 있지 않다면, 먼저 설치합니다.
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+
+위 명령어를 실행한 후, 쉘을 다시 시작하거나 아래 명령어를 실행합니다.
+
+source ~/.bashrc
+
+nvm을 사용하여 Node.js 최신 LTS 버전을 설치합니다.
+
+nvm install --lts
+
+설치한 Node.js 버전을 기본 버전으로 설정합니다.
+
+nvm use --lts
+
+npm install
+
+개발 서버를 실행하여 프로젝트를 확인합니다.
+
+npm run dev
+
+이제 Node.js 18.17.0 이상 버전에서 Next.js 프로젝트가 정상적으로 실행될 것입니다. Next.js 개발 서버가 실행되면, 브라우저에서 http://localhost:3000을 열어 애플리케이션을 확인할 수 있습니다.
+
+실행 멈추기 : ctrl + c
